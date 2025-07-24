@@ -16,13 +16,17 @@ struct ContentView: View {
                 NavigationLink(destination: SecondView()) {
                                     Text("Click me")
                                 }
-                            }
-                           
-                        }
-        .navigationTitle("Home")
-        .navigationBarHidden(true)
-                    }
+                NavigationLink(destination: Contact()){
+                    Text("Contact")
                 }
+                
+                }
+                            }
+            .navigationTitle("Home")
+            .navigationBarHidden(true)                        }
+    
+                    }
+                
 
                 #Preview {
                     ContentView()
