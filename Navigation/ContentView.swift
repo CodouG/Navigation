@@ -13,15 +13,17 @@ struct ContentView: View {
             VStack {
                 Text("This is the root view")
                 
-                NavigationLink(destination: Text("You've arrived at the Second view!")) {
-                    Text("Click me")
+                NavigationLink(destination: SecondView()) {
+                                    Text("Click me")
+                                }
+                            }
+                           
+                        }
+        .navigationTitle("Home")
+        .navigationBarHidden(true)
+                    }
                 }
-            }
-            .padding() // Apply padding to VStack
-        }
-    }
-}
 
-#Preview {
-    ContentView()
-}
+                #Preview {
+                    ContentView()
+                }
